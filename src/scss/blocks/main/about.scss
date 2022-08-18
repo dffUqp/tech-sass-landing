@@ -1,0 +1,135 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 170px;
+  padding-top: 170px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include onLaptop {
+      gap: 20px;
+    }
+    @include onModile {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__block {
+    max-width: 582px;
+    display: flex;
+    flex-direction: column;
+
+    @include onModile {
+      gap: 20px;
+      max-width: 320px;
+    }
+  }
+
+  &__img {
+    max-width: 582px;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+    @media (max-width: 1188px) {
+      max-width: 475px;
+    }
+
+    @include onTablet {
+      max-width: 374px;
+    }
+
+    @media (max-width: 675px) {
+      max-width: 300px;
+    }
+
+    @include onModile {
+      display: none;
+    }
+
+    &--block {
+      display: none;
+
+      @include onModile {
+        display: flex;
+        align-self: center;
+        max-width: 259px;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &--first {
+      @include onLaptop {
+        margin-left: -31px;
+        content: url(./src/img/about__img_1-small.png);
+      }
+    }
+
+    &--second {
+      @include onLaptop {
+        margin-right: -31px;
+        content: url(./src/img/about__ing_2-small.png);
+      }
+    }
+  }
+
+  &__title {
+    @include text-big;
+    text-transform: uppercase;
+
+    color: $dark;
+  }
+
+  &__desc {
+    @include text-main;
+    color: $grey;
+    margin-top: 30px;
+    margin-bottom: 45px;
+
+    @include onTablet {
+      -ms-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 5;
+      -webkit-line-clamp: 5;
+      line-clamp: 5;
+      display: -webkit-box;
+
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+
+    @include onModile {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    @include text-main;
+    max-width: max-content;
+    font-weight: 700;
+    color: $green;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 55%;
+      height: 2px;
+      background-color: $green;
+      transition: width 0.4s ease-out;
+    }
+
+    @include isHover {
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

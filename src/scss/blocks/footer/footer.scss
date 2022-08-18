@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 170px;
+    padding-bottom: 25px;
+  
+    &__copyright {
+      @include text-secondary;
+      color: $ligthGrey;
+      text-align: center;
+    }
+  }

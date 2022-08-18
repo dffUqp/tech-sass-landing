@@ -1,0 +1,72 @@
+.pagination {
+  display: none;
+  @include onLaptop {
+    display: flex;
+    max-width: 93px;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+
+  @include onModile {
+    max-width: 100%;
+  }
+
+  &__arrows {
+    display: flex;
+  }
+
+  &__rigth {
+    width: 48px;
+    height: 14px;
+    background-image: url('./src/img/slider-arrow-rigth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.disable {
+      background-image: url('./src/img/slider-arrow-rigth-disable.png');
+    }
+  }
+
+  &__left {
+    width: 48px;
+    height: 14px;
+    background-image: url('./src/img/slider-arrow-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.disable {
+      background-image: url('./src/img/slider-arrow-left-disable.png');
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__current {
+    display: inline-block;
+    padding-bottom: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    color: $dark;
+  }
+
+  &__total {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 13px;
+    color: $green;
+  }
+}

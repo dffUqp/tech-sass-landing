@@ -1,0 +1,33 @@
+.presentation {
+  display: flex;
+  justify-content: center;
+  padding-top: 170px;
+
+  @include onLaptop {
+    padding-top: 140px;
+  }
+
+  @include onModile {
+    padding-top: 100px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-width: 846px;
+    max-height: 520px;
+
+    @include onLaptop {
+      max-width: 700px;
+      max-height: 430px;
+    }
+
+    @include onModile {
+      max-width: 400px;
+    }
+  }
+}
+
+.presentation-container {
+  padding: 0;
+}

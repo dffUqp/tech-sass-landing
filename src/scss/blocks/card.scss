@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include onModile {
+    display: none;
+  }
+
+  &__img {
+    max-width: 70px;
+    max-height: 50px;
+
+    @include onTablet {
+      max-height: 40px;
+    }
+  }
+
+  &__title {
+    @include text-medium;
+    margin-top: 30px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    height: 56px;
+    color: $dark;
+
+    @include onTablet {
+      margin-bottom: 15px;
+    }
+
+    @include onModile {
+      height: auto;
+      max-height: 56px;
+    }
+  }
+
+  &__description {
+    @include text-secondary;
+
+    color: $grey;
+  }
+
+  &--visible {
+    display: flex;
+  }
+}

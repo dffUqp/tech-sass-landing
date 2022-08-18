@@ -1,0 +1,72 @@
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  @include onModile {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  padding-top: 170px;
+
+  &__title {
+    @include text-big;
+  }
+
+  &__submit {
+    background: $green;
+    color: white;
+    transition: background 0.2s ease-in-out;
+
+    @include isHover {
+      &:hover {
+        background: $darkGreen;
+      }
+    }
+  }
+
+  &__form {
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Inter';
+
+    @include onLaptop {
+      max-width: 340px;
+    }
+  }
+
+  &__input {
+    display: block;
+    border: 1px solid $grey;
+    outline: none;
+    margin-bottom: 19px;
+    padding: 12px 36px;
+    width: 100%;
+
+    @include onLaptop {
+      padding: 12px 30px;
+    }
+
+    @include onModile {
+      padding: 12px 20px;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    border: 1px solid $grey;
+    outline: none;
+    margin-bottom: 19px;
+    padding: 12px 36px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+
+    @include onLaptop {
+      padding: 12px 30px;
+    }
+    @include onModile {
+      padding: 12px 20px;
+    }
+  }
+}

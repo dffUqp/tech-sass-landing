@@ -1,0 +1,29 @@
+.navbar {
+    padding: 28px 0;
+    @include onTablet {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      justify-content: center;
+      column-gap: 84px;
+      row-gap: 30px;
+      flex-wrap: wrap;
+    }
+  
+    &__link {
+      @include text-secondary;
+      color: $dark;
+  
+      &.active {
+        font-weight: 700;
+      }
+  
+      @include isHover {
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.benefits {
+  padding-top: 170px;
+  @include onTablet {
+    padding-top: 140px;
+  }
+
+  @include onModile {
+    padding-top: 110px;
+  }
+
+  &__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(170px, 276px));
+    gap: 30px;
+    padding-top: 62px;
+
+    @include onLaptop {
+      grid-template-columns: repeat(2, minmax(210px, 340px));
+    }
+
+    @include onTablet {
+      padding-top: 0px;
+    }
+
+    @include onModile {
+      grid-template-columns: repeat(1, minmax(230px, 260px));
+    }
+  }
+}

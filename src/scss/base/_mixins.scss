@@ -1,0 +1,25 @@
+@mixin onLaptop {
+  @media (max-width: 1012px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin onModile {
+  @media (max-width: 510px) {
+    @content;
+  }
+}
+
+@mixin isHover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+

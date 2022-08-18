@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  &__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+ 
+    color: $grey;
+
+    @include isHover {
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__btn {
+    color: white;
+    background: $dark;
+    transition: background 0.2s ease-in-out;
+
+    @include isHover {
+      &:hover {
+        background: $black;
+      }
+    }
+  }
+}

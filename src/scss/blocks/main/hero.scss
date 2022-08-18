@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+
+  @include onTablet {
+    padding-top: 129px;
+  }
+
+  @include onModile {
+    flex-direction: column-reverse;
+    padding-top: 0px;
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 378px;
+    row-gap: 30px;
+    @include onTablet {
+      max-width: 339px;
+    }
+    @include onModile {
+      max-width: 260px;
+      row-gap: 20px;
+    }
+  }
+
+  &__img {
+    max-width: 816px;
+    width: 100%;
+    height: 464px;
+
+    background-image: url('./src/img/desktop_header.png');
+    background-repeat: no-repeat;
+
+    @include onTablet {
+      background-image: url('./src/img/tablet_header.png');
+      height: 317px;
+    }
+
+    @include onModile {
+      background-image: url('./src/img/modile_header.png');
+      background-position: center;
+      height: 245px;
+    }
+  }
+
+  &__title {
+    @include text-huge;
+    text-transform: uppercase;
+    color: $dark;
+  }
+
+  &__subtitle {
+    @include text-main;
+    max-width: 276px;
+    color: $dark;
+  }
+}
+
+.hero-container {
+  max-width: 1210px;
+  padding-right: 0;
+
+  @include onModile {
+    padding: 0;
+  }
+}

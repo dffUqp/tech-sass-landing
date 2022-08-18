@@ -1,0 +1,14 @@
+.slider {
+  @include onLaptop {
+    max-width: 270px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @include onTablet {
+    max-width: 230px;
+  }
+  @include onModile {
+    max-width: 205px;
+  }
+}

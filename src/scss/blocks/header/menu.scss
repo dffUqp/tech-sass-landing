@@ -1,0 +1,22 @@
+.menu {
+  @include onModile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    transition: left 0.5s ease 0s;
+    overflow-y: auto;
+    z-index: 8;
+    padding: 80px 20px 2rem 20px;
+
+    &.active {
+      left: 0;
+    }
+  }
+}

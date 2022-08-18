@@ -1,0 +1,78 @@
+.feature {
+  padding-top: 110px;
+
+  &__title {
+    @include text-big;
+    text-transform: uppercase;
+    color: $dark;
+
+    margin-bottom: 30px;
+
+    @include onModile {
+      padding: 0 30px;
+    }
+  }
+
+  &__content {
+    background-color: $ligthGreen;
+    position: relative;
+    max-width: 100%;
+    padding: 60px 0 60px 102px;
+
+    @include onLaptop {
+      padding: 60px 0 150px 90px;
+    }
+
+    @media (max-width: 675px) {
+      padding-bottom: 235px;
+    }
+
+    @include onModile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 30px 173px 30px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 543px;
+    height: 301px;
+    background-repeat: no-repeat;
+    background-image: url('./src/img/feature__desc.png');
+
+    @include onLaptop {
+      width: 415px;
+      height: 226px;
+      right: 10px;
+      background-image: url('./src/img/feature__tablet.png');
+    }
+
+    @include onModile {
+      width: 336px;
+      height: 174px;
+      right: 0px;
+      background-position: 20px;
+
+      background-image: url('./src/img/feature__modile.png');
+    }
+  }
+
+  &__lists {
+    @media (min-width: 1012px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(300px, 378px));
+      column-gap: 132px;
+      row-gap: 56px;
+    }
+  }
+}
+
+.feature-container {
+  @include onModile {
+    padding: 0px;
+  }
+}

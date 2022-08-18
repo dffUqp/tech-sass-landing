@@ -1,0 +1,14 @@
+.logo {
+  width: 161px;
+  height: 27px;
+  background-image: url('./src/img/logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--footer {
+    @include onModile {
+      display: none;
+    }
+  }
+}

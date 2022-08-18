@@ -1,0 +1,79 @@
+@mixin text-huge {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 78px;
+  
+    @include onTablet {
+      font-size: 48px;
+      line-height: 62px;
+    }
+    @include onModile {
+      font-size: 40px;
+      line-height: 52px;
+    }
+  }
+  
+  @mixin text-big {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+  
+    @include onTablet {
+      font-size: 36px;
+      line-height: 46px;
+    }
+    @include onModile {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  
+  @mixin text-small {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 42px;
+  
+    @include onTablet {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    @include onModile {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  
+  @mixin text-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  
+    @include onLaptop {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  
+  @mixin text-secondary {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  @mixin text-medium {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
