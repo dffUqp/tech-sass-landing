@@ -235,6 +235,9 @@ a {
   display: flex;
 }
 
+.list {
+  height: auto;
+}
 .list__title {
   font-family: "Inter";
   font-style: normal;

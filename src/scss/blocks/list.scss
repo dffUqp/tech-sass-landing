@@ -1,17 +1,18 @@
 .list {
-    &__title {
-      @include text-small;
-      text-transform: uppercase;
-      color: $darkGreen;
-      margin-bottom: 30px;
-    }
-  
-    &__item {
-      margin-bottom: 10px;
-      @include text-main;
-      color: $dark;
-      list-style-type: disc;
-      list-style-position: inside;
-    }
+  height: auto;
+
+  &__title {
+    @include text-small;
+    text-transform: uppercase;
+    color: $darkGreen;
+    margin-bottom: 30px;
   }
-  
+
+  &__item {
+    margin-bottom: 10px;
+    @include text-main;
+    color: $dark;
+    list-style-type: disc;
+    list-style-position: inside;
+  }
+}
