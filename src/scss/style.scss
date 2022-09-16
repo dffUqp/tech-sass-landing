@@ -1,12 +1,12 @@
-@import './base/normalize';
+@import './base/reset';
 @import './base/variable';
 @import './base/mixins';
-@import './abstracts/index.';
+@import './abstracts/index.scss';
 
 @import './blocks/container.scss';
 @import './blocks/slider/pagination.scss';
 @import './blocks/slider/slider.scss';
-@import './blocks/card.scss'; 
+@import './blocks/card.scss';
 @import './blocks/list.scss';
 @import './blocks/burger.scss';
 @import './blocks/navbar.scss';
@@ -17,7 +17,7 @@
 @import './blocks/header/header.scss';
 @import './blocks/header/menu.scss';
 @import './blocks/main/hero.scss';
-@import './blocks/main/benefits.scss'; 
+@import './blocks/main/benefits.scss';
 @import './blocks/main/feature.scss';
 @import './blocks/main/presentation.scss';
 @import './blocks/main/about.scss';
@@ -25,7 +25,7 @@
 @import './blocks/footer/footer.scss';
 
 body {
-  background-color: #f7f7f7;  
+  background-color: #f7f7f7;
 
   &[class='lock'] {
     overflow: hidden;

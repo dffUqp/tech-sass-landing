@@ -4,32 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/scripts/slider/swiper.min.css" />
+    <link rel="stylesheet" href="./src/ scripts/slider/swiper.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./src/scripts/menu.js" defer></script>
-    <title>DFFUQP</title>
+    <title>dffUqp</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header">
-          <div class="header__logo logo"></div>
+          <a class="header__logo" href="#">
+            <img class="logo" src="./src/img/logo.svg" alt="logo" />
+          </a>
           <div class="header__actions menu">
             <a href="#" class="header__link">SPECS</a>
             <div class="header__toggle toggle">
               <a href="#" class="toggle__text active">EN</a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5"
-                height="13"
-                viewBox="0 0 5 13"
-                fill="none"
-              >
-                <path
-                  d="M4.6733 0.340908L1.39205 12.5312H0.318182L3.59943 0.340908H4.6733Z"
-                  fill="#333333"
-                />
-              </svg>
+              /
               <a href="#" class="toggle__text">UA</a>
             </div>
             <button class="btn header__btn">Buy</button>
@@ -91,7 +82,7 @@
                   alt="some vector"
                 />
 
-                <h2 class="card__title">Futuristic Design</h2>
+                <div class="card__title">Futuristic Design</div>
                 <p class="card__description">
                   To give Luna a truly flawless look, we specifically picked
                   aircraft grade aluminum as its material and adopted both
@@ -105,7 +96,7 @@
                   src="./src/img/card3.svg"
                   alt="speaker"
                 />
-                <h2 class="card__title">Tweeter Speaker System</h2>
+                <div class="card__title">Tweeter Speaker System</div>
                 <p class="card__description">
                   To deliver a more layered sound performance better than a sole
                   full-range speaker, our team equipped Luna with one more
@@ -115,7 +106,7 @@
               </div>
               <div class="benefits__card card">
                 <img class="card__img" src="./src/img/card2.svg" alt="Wi-Fi" />
-                <h2 class="card__title">Multiroom System</h2>
+                <div class="card__title">Multiroom System</div>
                 <p class="card__description">
                   Luna is natively compatible with your home Wi-Fi. Set up
                   multiple speakers in different rooms to expand your music
@@ -128,7 +119,7 @@
                   src="./src/img/card1.svg"
                   alt="minimalist sun"
                 />
-                <h2 class="card__title">Intuitive Lighting System</h2>
+                <div class="card__title">Intuitive Lighting System</div>
                 <p class="card__description">
                   An intuitive user interface allows you to adjust the hue and
                   saturation of color for lighting that fits any mood and
@@ -294,7 +285,9 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="logo logo--footer"></div>
+          <a class="footer__logo" href="#">
+            <img class="logo" src="./src/img/logo.svg" alt="logo" />
+          </a>
           <div class="social">
             <a href="#" class="social__link">
               <img src="./src/img/facebbok.png" alt="facebbok" />
